@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+.Featured {
+  background-color: hsl(51, 100%, 50%);
+  box-shadow: 0 0 10px hsla(50, 100%, 50%, 0.4);
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.notFeatured {
+  background-color: hsl(160, 100%, 45%);
+  box-shadow: 0 0 10px hsla(152, 100%, 50%, 0.4);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home {
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
+}
+
+.Header {
+  margin-top: 10rem;
+}
+
+.Card {
+  display: flex;
+  /* width: 70vw; */
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  /* border-radius: 40px; */
+  position: relative;
+  /* overflow-x: scroll; */
+  /* overflow-y: hidden; */
+}
+
+.App {
+  display: flex;
+  /* flex-direction: column; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.restro {
+  width: 80vw;
+  display: flex;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+
+  outline: 2px solid hsl(0, 0%, 0%);
+
+  user-select: none;
+  height: 10vh;
+  transition: all 0.3s ease-in-out;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.name {
+  font-size: 2rem;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.food {
+  font-family: "Jetbrains Mono", monospace;
+  font-weight: 900;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+
+.star {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.star:hover {
+  /* background-color: red; */
+  scale: 1.5;
+}
+
+.cScroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  flex-direction: row;
+  width: 90vw;
+}
+
+/* .cScroll::-webkit-scrollbar {
+  width: 10px;
+  scroll-behavior: smooth;
+}
+.cScroll::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 50px;
+} */
+
+.scroll {
+  height: 20vh;
+}
+
+.intscroll {
+  width: 35vw;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .scStar {
+    bottom: 0;
+    top: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Card {
+    padding: 1rem 10px;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .intscroll {
+    width: 55vw;
   }
 }
+
+::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-track {
+  margin-block: 10px;
+  border-radius: 80px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 80px;
+  border: 4px solid #ffffff;
+  background-color: #000000;
+}
+
+
