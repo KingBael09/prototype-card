@@ -45,7 +45,7 @@
   padding: 1rem;
   border-radius: 10px;
   cursor: pointer;
-
+  /* overflow: hidden; */
   outline: 2px solid hsl(0, 0%, 0%);
 
   user-select: none;
@@ -76,7 +76,6 @@
 }
 
 .star:hover {
-  /* background-color: red; */
   scale: 1.5;
 }
 
@@ -87,26 +86,19 @@
   width: 90vw;
 }
 
-/* .cScroll::-webkit-scrollbar {
-  width: 10px;
-  scroll-behavior: smooth;
-}
-.cScroll::-webkit-scrollbar-thumb {
-  background-color: black;
-  border-radius: 50px;
-} */
-
 .scroll {
   height: 20vh;
 }
 
 .intscroll {
-  width: 35vw;
+  width: 25vw;
 }
+
 .data {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 600px) {
@@ -118,9 +110,11 @@
   .Card {
     padding: 1rem 10px;
   }
+
   .name {
     font-size: 1.5rem;
   }
+
   .intscroll {
     width: 55vw;
   }
@@ -141,5 +135,3 @@
   border: 4px solid #ffffff;
   background-color: #000000;
 }
-
-

@@ -35,7 +35,20 @@ function App() {
   if (featSet !== undefined && othSet !== undefined) {
     return (
       <div className="home">
+        <br />
         @Responsive CSS
+        <br />
+        <span>
+          @Data Fetched from{" "}
+          <a
+            className="src"
+            target={"_blank"}
+            rel="noreferrer"
+            href="https://github.com/KingBael09/JSON_Server"
+          >
+            Here
+          </a>
+        </span>
         <h1 className="Header">Horizontal</h1>
         <div className="App horizontal">
           <div className="Card cScroll">
@@ -45,7 +58,7 @@ function App() {
                   <div className="data intscroll">
                     <div className="name">{e.name}</div>
                     <div className="food">({e.cuisine})</div>
-                    <div className="tags"></div>
+                    {/* <div className="tags"></div> */}
                   </div>
                   <div className="star scStar">
                     <AiOutlineStar />
@@ -59,7 +72,7 @@ function App() {
                   <div className="data intscroll">
                     <div className="name">{e.name}</div>
                     <div className="food">({e.cuisine})</div>
-                    <div className="tags"></div>
+                    {/* <div className="tags"></div> */}
                   </div>
                 </div>
               );
